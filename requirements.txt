@@ -17,3 +17,4 @@ requests
 urllib3
 Werkzeug
 yfinance
+gunicorn
