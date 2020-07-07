@@ -16,8 +16,7 @@ from datetime import datetime
 import yfinance as yf
 
 # Read data
-#df = pd.read_csv('../DATA/chilean_stocks.csv', index_col='Date')
-df = pd.read_csv('https://raw.githubusercontent.com/ruben-rosa/MyDashApp/master/data/chilean_stocks.csv?token=AKWKPWCAOXSSDV2RGDZZOCS7APXZQ')
+df = pd.read_csv('chilean_stocks.csv', index_col='Date')
 df = df.groupby(by=['Ticker', 'Name']).sum().reset_index()[['Ticker','Name']].set_index('Ticker')
 
 available_tickers = []
