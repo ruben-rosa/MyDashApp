@@ -29,6 +29,7 @@ del df
 app = dash.Dash(
     __name__, meta_tags=[{"name": "viewport", "content": "width=device-width"}]
 )
+server = app.server
 
 available_columns = ['Open', 'High', 'Low', 'Close', 'Volume', 'Pct Change - Close', 'Cummulative Returns']
 
