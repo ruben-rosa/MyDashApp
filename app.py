@@ -14,6 +14,8 @@ import pandas as pd
 from datetime import datetime
 
 import yfinance as yf
+#this makes fix yahoo finance work
+yf.pdr_override()
 
 # Read data
 df = pd.read_csv('chilean_stocks.csv', index_col='Date')
